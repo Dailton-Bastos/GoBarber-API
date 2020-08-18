@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Dailton Bastos <dailtonbastos@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "start:debug": "nodemon --inspect src/server.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
