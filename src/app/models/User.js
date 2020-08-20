@@ -26,7 +26,11 @@ class User extends Model {
   }
 
   static associate(models) {
-    User.belongsTo(models.File, { targetKey: 'id', foreignKey: 'avatar_id' });
+    User.belongsTo(models.File, {
+      targetKey: 'id',
+      foreignKey: 'avatar_id',
+      as: 'avatar',
+    });
   }
 
   checkPassword(password) {
